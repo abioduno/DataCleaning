@@ -37,7 +37,7 @@ DataExtracts$id <-activity_labels[DataExtracts$id,2]
 names(DataExtracts)<-gsub("^t", "Time", names(DataExtracts))
 names(DataExtracts)<-gsub("^f", "Frequency", names(DataExtracts))
 names(DataExtracts)<-gsub("BodyBody", "Body", names(DataExtracts))
-names(DataExtracts)<-gsub("^angle.t", "t_Angle", names(DataExtracts))
+names(DataExtracts)<-gsub("^angle.t", "t_Angle", names(DataExtracts)) 
 names(DataExtracts)[2]="activity"
 
 #5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
